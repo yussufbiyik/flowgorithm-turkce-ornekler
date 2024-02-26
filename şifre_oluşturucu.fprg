@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 10:26:06 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MTU6MTYgw5ZTOzMwNTg="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MjY6MDYgw5ZTOzE7MzE2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Amac&#305;m&#305;z kullan&#305;c&#305;n&#305;n istedi&#287;i uzunlukta bir &#351;ifre olu&#351;turmak."/>
+            <declare name="istenenUzunluk, donguSayisi" type="Integer" array="False" size=""/>
+            <declare name="sifre" type="String" array="False" size=""/>
+            <comment text="For d&#246;ng&#252;s&#252;n&#252;n oldu&#287;u k&#305;s&#305;mda sifrenin ucuna ekleme yapaca&#287;&#305;m&#305;z i&#231;in burada &#351;ifre de&#287;i&#351;keninin de&#287;eri olarak &quot;&quot; yaz&#305;yoruz, hi&#231;bir &#351;ey yazmasayd&#305;k olmayan bir &#351;eyin ucuna ekleme yapamayaca&#287;&#305;m&#305;zdan dolay&#305; hata al&#305;rd&#305;k."/>
+            <assign variable="sifre" expression="&quot;&quot;"/>
+            <output expression="&quot;&#350;ifreniz ka&#231; haneli olmal&#305;?&quot;" newline="True"/>
+            <input variable="istenenUzunluk"/>
+            <for variable="donguSayisi" start="istenenUzunluk" end="1" direction="dec" step="1">
+                <declare name="rastgeleSayi" type="Integer" array="False" size=""/>
+                <comment text="&#214;zellikle 9 girilme sebebi bir basamakl&#305;dan daha b&#252;y&#252;k bir say&#305; girersek ve Random fonksiyonu iki, &#252;&#231; basamakl&#305; bir de&#287;er d&#246;nd&#252;r&#252;rse kullan&#305;c&#305;n&#305;n istedi&#287;iden daha uzun bir &#351;ifre olu&#351;ur."/>
+                <assign variable="rastgeleSayi" expression="Random(9)"/>
+                <comment text="Bu &#351;ekilde bir atama sayesinde &#351;ifre de&#287;i&#351;keninin ucuna say&#305;lar&#305;m&#305;z&#305; ekleyebiliyoruz."/>
+                <assign variable="sifre" expression="sifre&amp;ToString(rastgeleSayi)"/>
+            </for>
+            <output expression="&quot;&#350;ifreniz:&quot;" newline="True"/>
+            <output expression="sifre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

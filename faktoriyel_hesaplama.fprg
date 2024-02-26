@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 10:14:34 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MDU6MzEgw5ZTOzMwNTQ="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MTQ6MzQgw5ZTOzE7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="faktoriyeliIstenenSayi, islemSonucu, donguSayisi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fakt&#246;riyelinin al&#305;nmas&#305;n&#305; istedi&#287;iniz say&#305;y&#305; girin.&quot;" newline="True"/>
+            <input variable="faktoriyeliIstenenSayi"/>
+            <assign variable="islemSonucu" expression="faktoriyeliIstenenSayi"/>
+            <comment text="&#304;stenen say&#305; d&#246;n&#252;g&#252;n&#252;n de ba&#351;lang&#305;c&#305; olursa say&#305;y&#305; kendisi ile &#231;arpaca&#287;&#305;m&#305;z i&#231;in d&#246;ng&#252;y&#252; istenen say&#305;dan bir say&#305; &#231;&#305;akrtarak ba&#351;lat&#305;yoruz."/>
+            <for variable="donguSayisi" start="faktoriyeliIstenenSayi-1" end="1" direction="dec" step="1">
+                <assign variable="islemSonucu" expression="islemSonucu*donguSayisi"/>
+            </for>
+            <output expression="&quot;Sonu&#231;:&quot;" newline="True"/>
+            <output expression="islemSonucu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

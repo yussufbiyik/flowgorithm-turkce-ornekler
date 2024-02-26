@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 09:32:55 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6MjY6MTQgw5ZTOzMwNjY="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6MzI6NTUgw5ZTOzE7MzE3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="TL'yi Reel, dolar&#305; ise String atama sebebimiz ToFixed fonksiyonunun String cinsinden &#231;&#305;kt&#305; vermesidir"/>
+            <declare name="tlMiktar" type="Real" array="False" size=""/>
+            <declare name="dolarMiktar" type="String" array="False" size=""/>
+            <output expression="&quot;&#199;evirmek istedi&#287;iniz para miktar&#305;n&#305; giriniz (T&#252;rk Liras&#305;, 1$=31.12&#8378;).&quot;" newline="True"/>
+            <input variable="tlMiktar"/>
+            <comment text="ToFixed fonksiyonu ile virg&#252;lden sonra gelen say&#305;lar&#305; sadece 3 say&#305; ile limitleyip yazd&#305;r&#305;yoruz."/>
+            <assign variable="dolarMiktar" expression="ToFixed(tlMiktar/(31.12), 2)"/>
+            <output expression="&quot;Dolara &#231;evrilmi&#351; miktar:&quot;" newline="True"/>
+            <output expression="dolarMiktar&amp;&quot;$&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

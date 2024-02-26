@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 09:42:10 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6MzI6NTYgw5ZTOzMwNjk="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6NDI6MTAgw5ZTOzE7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Fizz buzz oyunun amac&#305; bir say&#305; 3'e b&#246;l&#252;nebiliyorsa Fizz, 5'e b&#246;l&#252;nebiliyorsa Buzz, hem 3 hem de 5 e b&#246;l&#252;nebiliyorsa da Fizz Buzz yazd&#305;rmakt&#305;r."/>
+            <comment text="E&#287;er say&#305;y&#305; hem 3'e hem de 5'e b&#246;lmek m&#252;mk&#252;n de&#287;ilse say&#305; geri yazd&#305;r&#305;l&#305;r."/>
+            <declare name="girilenSayi" type="Integer" array="False" size=""/>
+            <comment text="15'e b&#246;l&#252;nebilmek zaten hem 3'e hem de 5'e b&#246;l&#252;nebilmektir bu nedenle 15 yazmak da kabul edilebilir."/>
+            <output expression="&quot;L&#252;tfen bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="girilenSayi"/>
+            <if expression="girilenSayi%15==0">
+                <then>
+                    <output expression="&quot;Fizz Buzz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="girilenSayi%5==0">
+                        <then>
+                            <output expression="&quot;Buzz&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="girilenSayi%3==0">
+                                <then>
+                                    <output expression="&quot;Fizz&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="girilenSayi" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

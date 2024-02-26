@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 10:04:35 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6NTM6NDcgw5ZTOzMwNzI="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MDQ6MzUgw5ZTOzE7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Amac&#305;m&#305;z belirli bir miktara ne kadar bah&#351;i&#351; verilmesi gerek onu hesaplamak."/>
+            <declare name="asilOdeme, bahsisMiktari, bahsisOrani, toplamOdeme" type="Real" array="False" size=""/>
+            <comment text="Bah&#351;i&#351; miktar&#305; y&#252;zde 15 diyelim."/>
+            <assign variable="bahsisOrani" expression="15"/>
+            <output expression="&quot;L&#252;tfen &#246;demeniz gereken bah&#351;i&#351;siz miktar&#305; girin.&quot;" newline="True"/>
+            <input variable="asilOdeme"/>
+            <assign variable="bahsisMiktari" expression="asilOdeme*(bahsisOrani/100)"/>
+            <assign variable="toplamOdeme" expression="asilOdeme+bahsisMiktari"/>
+            <output expression="&quot;Vermeniz gereken bah&#351;i&#351; miktar&#305;:&quot;" newline="True"/>
+            <output expression="bahsisMiktari" newline="True"/>
+            <output expression="&quot;Bu miktarla beraber toplam &#246;demeniz:&quot;" newline="True"/>
+            <output expression="toplamOdeme" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

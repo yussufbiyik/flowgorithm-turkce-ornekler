@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 09:53:45 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6NDI6MTMgw5ZTOzMwNjM="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6NTM6NDUgw5ZTOzI7MzE3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Bu d&#246;ng&#252; 100 defa &#231;al&#305;&#351;acak."/>
+            <declare name="donguSayisi" type="Integer" array="False" size=""/>
+            <comment text="D&#246;ng&#252;n&#252;n ka&#231;&#305;nc&#305; sefer &#231;al&#305;&#351;t&#305;&#287;&#305;n&#305; donguSayisi adl&#305; de&#287;i&#351;kene at&#305;yoruz."/>
+            <for variable="donguSayisi" start="100" end="1" direction="dec" step="1">
+                <output expression="&quot;Ayn&#305; kodu &quot;&amp;donguSayisi&amp;&quot;. sefer d&#246;n&#252;&#351;&#252;m!&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

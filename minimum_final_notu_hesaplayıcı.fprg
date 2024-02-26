@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-23 11:20:53 &#214;&#214;"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjM7MTE6MTM6NTggw5bDljszMTkx"/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjM7MTE6MjA6NTMgw5bDljsxOzMyOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="De&#287;erlerini atamak ve kullan&#305;c&#305;dan almak i&#231;ni de&#287;i&#351;kenleri tan&#305;mla"/>
+            <declare name="vize, final, gecisNotu" type="Real" array="False" size=""/>
+            <assign variable="gecisNotu" expression="60"/>
+            <comment text="Kullan&#305;c&#305;dan vize notunu al"/>
+            <output expression="&quot;Vize notunuzu giriniz.&quot;" newline="True"/>
+            <input variable="vize"/>
+            <comment text="S&#305;navdan almas&#305; gereken minimum final notunu hesapla"/>
+            <assign variable="final" expression="(gecisNotu-(vize*0.4))/0.6"/>
+            <comment text="Notu ekrana yazd&#305;r"/>
+            <output expression="&quot;Dersten ge&#231;ebilmek i&#231;in alman&#305;z gereken minimum final notu:&quot;" newline="True"/>
+            <output expression="final" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

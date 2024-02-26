@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-23 11:13:55 &#214;&#214;"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjM7MTE6MDE6NDEgw5bDljszMTgw"/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjM7MTE6MTM6NTUgw5bDljsxOzMyOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Say&#305;lar&#305; ve yap&#305;lacak i&#351;lemin operat&#246;r&#252;n&#252; atamak i&#231;in de&#287;i&#351;kenleri tan&#305;mla"/>
+            <declare name="sayi1, sayi2, sonuc" type="Integer" array="False" size=""/>
+            <declare name="operator" type="String" array="False" size=""/>
+            <comment text="Kullan&#305;c&#305;dan operat&#246;r ve say&#305;lara de&#287;er atamak i&#231;in girdi al"/>
+            <output expression="&quot;Say&#305;lar&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <input variable="sayi2"/>
+            <output expression="&quot;Yap&#305;lacak i&#351;lemin operat&#246;r&#252;n&#252; giriniz (+ veya -).&quot;" newline="True"/>
+            <input variable="operator"/>
+            <comment text="Se&#231;ilen operat&#246;re g&#246;re i&#351;lem yapmak i&#231;in if blo&#287;unu kullan"/>
+            <if expression="operator==&quot;+&quot;">
+                <then>
+                    <assign variable="sonuc" expression="sayi1+sayi2"/>
+                </then>
+                <else>
+                    <assign variable="sonuc" expression="sayi1-sayi2"/>
+                </else>
+            </if>
+            <comment text="Sonucu yazd&#305;r"/>
+            <output expression="&quot;&#304;&#351;leminizin sonucu:&quot;" newline="True"/>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

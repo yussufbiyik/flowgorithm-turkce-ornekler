@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 10:36:52 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MjY6MTUgw5ZTOzMwNTk="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MTA6MzY6NTIgw5ZTOzE7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kilo, boy, vki" type="Real" array="False" size=""/>
+            <output expression="&quot;Kilonuzu girin.&quot;" newline="True"/>
+            <input variable="kilo"/>
+            <output expression="&quot;Boyunuzu girin (metre cinsinden).&quot;" newline="True"/>
+            <input variable="boy"/>
+            <assign variable="vki" expression="kilo/(boy*boy)"/>
+            <output expression="&quot;V&#252;cut Kitle Endeksiniz:&quot;" newline="True"/>
+            <output expression="vki" newline="True"/>
+            <if expression="vki&lt;=24.9">
+                <then>
+                    <if expression="vki&gt;=18.5">
+                        <then>
+                            <output expression="&quot;Kilonuz normal.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Biraz kilo alman&#305;z gerekli.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Bir miktar fazla kilonuz var.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

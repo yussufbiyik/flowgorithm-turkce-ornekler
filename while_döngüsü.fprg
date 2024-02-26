@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-26 09:52:54 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6NDU6Mjkgw5ZTOzMwNzM="/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjY7MDk6NTI6NTQgw5ZTOzI7MzE3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kullan&#305;c&#305; dur diyene kadar bu while d&#246;n&#252;g&#252;s&#252; ko&#351;ulu sa&#287;land&#305;&#287;&#305; i&#231;in &#231;al&#305;&#351;maya devam edecek."/>
+            <declare name="durulsunMu" type="String" array="False" size=""/>
+            <assign variable="durulsunMu" expression="&quot;Hay&#305;r&quot;"/>
+            <output expression="&quot;Sen dur diyene kadar bu kod blo&#287;unu d&#246;nd&#252;rece&#287;im.&quot;" newline="True"/>
+            <while expression="durulsunMu==&quot;Hay&#305;r&quot;">
+                <output expression="&quot;Dur demen program&#305; durdurmak i&#231;in yeterli, duray&#305;m m&#305;?&quot;" newline="True"/>
+                <output expression="&quot;Evet ya da Hay&#305;r demelisin, b&#252;y&#252;k/k&#252;&#231;&#252;k harflere dikkat et&quot;" newline="True"/>
+                <input variable="durulsunMu"/>
+                <if expression="durulsunMu==&quot;Evet&quot;">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Hadi bir daha.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Ho&#351;&#231;akal.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

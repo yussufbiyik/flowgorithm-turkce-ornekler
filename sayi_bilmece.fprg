@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yussu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-23 11:18:27 &#214;S"/>
+        <attribute name="created" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjM7MTE6MjA6NTUgw5bDljszMTg2"/>
+        <attribute name="edited" value="eXVzc3U7REVTS1RPUC1JM0tVNUVEOzIwMjQtMDItMjM7MTE6MTg6Mjcgw5ZTOzQ7MzE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&#220;st men&#252;de d&#252;zenledi&#287;iniz fonksiyonu de&#287;i&#351;tirerek kodu g&#246;rebilirsiniz."/>
+            <call expression="oyunuBaslat()"/>
+        </body>
+    </function>
+    <function name="oyunuBaslat" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tekrarIstiyor" type="String" array="False" size=""/>
+            <declare name="rastgeleSayi, secilenSayi" type="Integer" array="False" size=""/>
+            <comment text="Kullan&#305;c&#305;dan bir tahmin al."/>
+            <output expression="&quot;Akl&#305;mdan s&#305;f&#305;r ile 10 aras&#305;nda bir say&#305; tuttum! Sence hangi say&#305;y&#305; tuttum.?&quot;" newline="True"/>
+            <input variable="secilenSayi"/>
+            <comment text="Random fonksiyonu ile 0 ile 10 aras&#305; bir say&#305; belirle.&#13;&#10;Random fonksiyonunun ald&#305;&#287;&#305; de&#287;ere &quot;n&quot; denirse, fonksiyon 0 ile n-1 aras&#305; bir de&#287;er verir, bu nedenle 10 yerine 11 say&#305;s&#305; fonksiyona verilir."/>
+            <assign variable="rastgeleSayi" expression="random(11)"/>
+            <comment text="Tahminin do&#287;rulu&#287;una g&#246;re bir yan&#305;t ver."/>
+            <if expression="secilenSayi==rastgeleSayi">
+                <then>
+                    <output expression="&quot;Tebrikler, do&#287;ru bildin!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilemedin, ben kazand&#305;m!&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="Kullan&#305;c&#305; tekrar oynamak istersen fonksyion kendisini tekrar &#231;a&#287;&#305;r&#305;r."/>
+            <output expression="&quot;Tekrar oynamak ister misin? Evet i&#231;in 1, hay&#305;r i&#231;in 0 demen yeterli&quot;" newline="True"/>
+            <input variable="tekrarIstiyor"/>
+            <if expression="tekrarIstiyor==&quot;Evet&quot;">
+                <then>
+                    <call expression="oyunuBaslat()"/>
+                </then>
+                <else>
+                    <output expression="&quot;G&#246;r&#252;&#351;&#252;r&#252;z&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
